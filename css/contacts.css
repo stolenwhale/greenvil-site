@@ -1,0 +1,17 @@
+.contacts {}
+.contacts .heading {margin: 0 0 90px;}
+
+
+.contacts .body {font-family: 'IBM Plex Sans', sans-serif;font-size: 18px;font-weight: normal;color: #223258;margin: 0 0 200px;}
+.contacts .body .adress {margin-bottom: 50px;}
+.contacts .body .contact-phones {}
+.contacts .body .contact-phones .grid {display: flex;justify-content: space-between;}
+.contacts .body .contact-phones .grid .item {}
+
+
+@media (max-width: 899px) {
+  .contacts .heading {margin: 0 0 50px;}
+  .contacts .body {font-size: 16px;}
+  .contacts .body .contact-phones .grid {font-size: 16px;flex-direction: column;}
+  .contacts .body .contact-phones .grid .item {margin-bottom: 20px;}
+}

@@ -1,0 +1,247 @@
+
+.tagline {z-index: 1;position: relative;margin: 140px 0px 0px -150px;}
+.tagline p {position: relative;font-family: 'Roboto Slab', serif;font-weight: normal;font-size: 42px;letter-spacing: 0.05em;line-height: 108.2%;color: #1C754F;background: #C0EA6A;padding: 25px 130px 25px 150px;}
+.tagline p::before {content: "";width: 60px;height: 5px;display: block;background-color: #1C754F;position: absolute;top: 50%;left: 45px;}
+
+h2.paragraph-title  {font-family: 'Roboto Slab', serif;color: #1C754F;font-size: 42px;font-weight: normal;line-height: 108.2%;margin: 0 0 20px;position: relative;max-width: 90%;}
+h2.paragraph-title::before {content: "";width: 60px;height: 5px;display: block;background-color: #C0EA6A;position: absolute;top: 50%;left: -90px;}
+
+@media (max-width: 1299px) {
+  .tagline {margin: 90px 0px 0px -150px;}
+  .tagline p {font-size: 32px;padding: 25px 40px 25px 140px;}
+  h2.paragraph-title {font-size: 32px;} 
+  .tagline p::before {width: 42px;height: 3px;left: 78px;}
+  h2.paragraph-title::before {width: 42px;height: 3px;left: -62px;}
+}
+
+@media (max-width: 899px) {
+  .tagline {margin: 40px -13.5px 0 -70px;}
+  .tagline p {font-size: 20px;padding: 15px 30px 15px 60px;}
+  .tagline p::before {width: 24px;height: 2px;left: 21px;}
+  h2.paragraph-title {font-size: 27px;margin-top: -30px;} 
+  h2.paragraph-title::before {width: 24px;height: 2px;left: -38px;}
+}
+
+@media (max-width: 449px) {
+  .tagline {margin: 36px 0 0px -150px;background: #C0EA6A;}
+  .tagline p {font-size: 20px;padding: 13px 40px 13px 140px;background: transparent;}
+  h2.paragraph-title {font-size: 24px;margin-top: 0;} 
+}
+
+
+.look-more {margin: 0 0 120px;}
+.look-more .row {background-color: #C0EA6A;display: flex;}
+.look-more .info-item {display: flex;align-items: center;background-color: #C0EA6A;}
+.look-more .info p {font-family: 'IBM Plex Sans', sans-serif;font-size: 18px;font-weight: normal;color: #223258;padding: 15px 0 15px 40px;}
+.look-more .line {width: 6px;height: 68px;background-color: #F4F7F0;}
+.look-more .link {display: flex;align-items: center;padding: 35px 0;background-color: #C0EA6A;}
+.look-more .link .map,
+.look-more .link .location,
+.look-more .link .loupe {margin: 0 auto;}
+.look-more .link a {font-family: 'IBM Plex Sans', sans-serif;font-weight: normal;font-size: 16px;text-transform: uppercase;position: relative;padding: 0 0 0 60px;}
+.look-more .link a:hover {color: #223258;text-decoration: underline;transition: 0.5s ease;}
+.look-more .link .map a::before {content: "";width: 60px;height: 44px;position: absolute;background-image: url('/images/look-at-map-icon.svg');background-repeat: no-repeat;background-position: center;background-size: contain;right: 170px;bottom: -60%;}
+.look-more .link .loupe a::before {content: "";width: 41px;height: 41px;position: absolute;background-image: url('/images/look-at-loupe-icon.svg');background-size: contain;background-repeat: no-repeat;background-position: center;right: 140px;bottom: -6px;}
+.look-more .link .location a::before {content: "";width: 41px;height: 41px;position: absolute;background-image: url('/images/look-at-location-icon.svg');background-size: contain;background-repeat: no-repeat;background-position: center;right: 252px;bottom: -5px;}
+
+@media (max-width: 1299px) {
+  .look-more {margin: 0 0 100px;}
+  .look-more .link.location a::before {bottom: 0;left: -45px;width: 31px;height: 31px;}
+}
+
+@media (max-width: 899px) {
+  .look-more {margin: 0 0 20px;}
+  .look-more .row {background-color: transparent}
+  .look-more .line {display: none;}
+  .look-more .link {padding: 30px 0;}
+  .look-more .link a {font-size: 14px;}
+  .look-more .link .map a::before {width: 35px;right: 155px;}
+  .look-more .link .loupe a::before {width: 32px;right: 116px;bottom: -9px;} 
+  .look-more .link .location a::before {width: 35px;right: 225px;}
+  
+}
+
+@media (max-width: 449px) {
+
+}
+
+.main .heading {margin: 0 0 170px;}
+.main .heading .headline {margin: -110px 0 10px;}
+.main .heading .headline h1 {font-family: 'Roboto', sans-serif;font-weight: normal;font-size: 18px;letter-spacing: 0.05em;color: #223258;}
+.main .heading .image-parallax {}
+.main .heading .image-parallax .image {position: relative;}
+.main .heading .image-parallax .image .bg {position: relative;}
+.main .heading .image-parallax .image .top {z-index: 3;}
+.main .heading .image-parallax .image .cloud {opacity: 0.5;transform: translate(0px, -90px)}
+.main .heading .image-parallax .image .top,
+.main .heading .image-parallax .image .cloud {position: absolute;top: 0;left: 0;width: 100%;}
+.main .heading .cotteges-menu {margin: -22px 0 0;}
+.main .heading .cotteges-menu .menu {display: flex;justify-content: space-between;}
+.main .heading .cotteges-menu .menu .item {background-color: #3F5586;padding: 11px 30px 9px;cursor: pointer;position: relative;}
+.main .heading .cotteges-menu .menu .item a {font-family: 'Roboto', sans-serif;color: #FFFFFF;text-transform: uppercase;font-weight: 500;font-size: 16px;letter-spacing: 0.04em;background-color: transparent;border: none;position: relative;z-index: 20;color: #ffffff;}
+.main .heading .cotteges-menu .menu .item a:hover {width: 100%;height: 100%;opacity: 1;border-right: 0 solid transparent;}
+.main .heading .cotteges-menu .menu .item::before {content: "";width: 100%;height: 100%;position: absolute;top: 0;left: 0;transition: 0.3s ease;width: 0;height: 0;opacity: 0;border-top: 45px solid #7089BF;border-right: 91px solid transparent;}
+.main .heading .cotteges-menu .menu .item:hover::before {width: 100%;height: 100%;opacity: 1;border-right: 0 solid transparent;}
+
+
+
+
+
+
+@media (max-width: 1299px) {
+  .main .heading {margin: 0 0 110px;}
+  .main .heading .headline {margin: -80px 0 0;}
+  .main .heading .cotteges-menu {margin: 0 -12.5px;margin-top: -20px;}
+}
+
+@media (max-width: 899px) {
+  .main .heading {margin: 0 0 140px;}
+  .main .heading .headline {margin: 0;}
+}
+
+@media (max-width: 449px) {
+  .main .heading {margin: 0 0 80px;}
+}
+
+
+.main .advantages {background: #F4F7F0;height: 325px;margin: 0 0 100px;}
+.main .advantages .row div {margin: -50px 0 0;}
+.main .advantages p {font-family: 'IBM Plex Sans',  sans-serif;color: #223258;font-size: 18px;font-weight: normal;line-height: 23px;}
+
+@media (max-width: 1299px) {
+  .main .advantages {height: 380px;}
+  .main .advantages p {font-size: 20px;}
+  .main .advantages svg {width: 160%;}
+  .main .advantages .row div {margin: -34px 0 0;}
+}
+
+@media (max-width: 899px) {
+  .main .advantages {height: 615px;}
+  .main .advantages p {font-size: 16px;}
+  .main .advantages svg {width: 130%;margin-top: 20px;position: relative;left: -20px;}
+  .main .advantages .row div {margin: 0;}
+}
+
+@media (max-width: 449px) {
+  .main .advantages {height: 575px;}
+  .main .advantages p {font-size: 14px;}
+}
+
+
+.main .infrastructure {margin: 0 0 120px;}
+.main .infrastructure .info {}
+.main .infrastructure .info p {font-family: 'IBM Plex Sans', sans-serif;font-weight: normal;font-size: 18px;line-height: 23px;margin: 0 0 45px;color: #223258;}
+.main .infrastructure .objects {display: flex;justify-content: space-between;align-items: flex-start;}
+.main .infrastructure .objects .item {max-width: 20%;background-color: #C0EA6A;display: flex;justify-content: flex-start;align-items: flex-end;position: relative;}
+.main .infrastructure .objects .item p {font-family: 'Roboto Slab', serif;font-weight: 300;font-size: 18px;line-height: 109%;color: #223258;}
+.main .infrastructure .objects .item p b {font-weight: bold;}
+.main .infrastructure .objects .item.item-1 {padding: 80px 30px 30px;}
+.main .infrastructure .objects .item::before {content: "";position:absolute;background-size: contain;background-repeat: no-repeat;background-position: center;}
+.main .infrastructure .objects .item.item-1::before {width: 36px;height: 46px;background-image: url('/images/infrastructure-icon-1.svg');top: -16px;left: -12px;}
+.main .infrastructure .objects .item.item-2 {padding: 100px 30px 30px;}
+.main .infrastructure .objects .item.item-2::before {width: 83px;height: 48px;background-image: url('/images/infrastructure-icon-2.svg');top: -14px;left: -15px;}
+.main .infrastructure .objects .item.item-3 {padding: 100px 30px 30px;}
+.main .infrastructure .objects .item.item-3::before {width: 44px;height: 51px;background-image: url('/images/infrastructure-icon-3.svg');top: -15px;left: -10px;}
+.main .infrastructure .objects .item.item-4 {padding: 110px 30px 30px;flex-direction: column;align-items: flex-start;}
+.main .infrastructure .objects .item.item-4::before {width: 37px;height: 58px;background-image: url('/images/infrastructure-icon-4.svg');top: -17px;left: -10px;}
+
+@media (max-width: 1299px) {
+  .main .infrastructure {margin: 0 0 60px;}
+  .main .infrastructure .info p {font-size: 20px;}
+  .main .infrastructure .objects .item {max-width: 22%;}
+  .main .infrastructure .objects .item.item-1 {padding: 50px 20px 20px;}
+  .main .infrastructure .objects .item.item-2 {padding: 60px 20px 20px;}
+  .main .infrastructure .objects .item.item-3 {padding: 70px 20px 20px;}
+  .main .infrastructure .objects .item.item-4 {padding: 50px 20px 20px;}
+  .main .infrastructure .objects .item.item-1::before {width: 31px;height: 46px;top: -16px;left: -12px;}
+  .main .infrastructure .objects .item.item-2::before {width: 53px;height: 48px;top: -16px;left: -15px;}
+  .main .infrastructure .objects .item.item-3::before {width: 34px;height: 51px;top: -19px;left: -10px;}
+  .main .infrastructure .objects .item.item-4::before {width: 31px;height: 58px;top: -19px;left: -10px;}
+  
+}
+
+@media (max-width: 899px) {
+  
+  .main .infrastructure .info p {font-size: 16px;}
+  .main .infrastructure .objects .item {max-width: 45%;margin-bottom: 50px;}
+
+}
+
+@media (max-width: 449px) {
+  .main .infrastructure {margin: 0;}
+  .main .infrastructure .info p {font-size: 14px;}
+  .main .infrastructure .objects .item p {font-size: 12px;}
+  .main .infrastructure .objects .item.item-1 {padding: 40px 20px 20px;}
+  .main .infrastructure .objects .item.item-2 {padding: 50px 20px 20px;}
+  .main .infrastructure .objects .item.item-3 {padding: 50px 20px 20px;}
+  .main .infrastructure .objects .item.item-4 {padding: 40px 20px 20px;}
+
+  .main .infrastructure .objects .item.item-1::before {width: 26px;height: 46px;top: -20px;left: -12px;}
+  .main .infrastructure .objects .item.item-2::before {width: 46px;height: 48px;top: -18px;left: -15px;}
+  .main .infrastructure .objects .item.item-3::before {width: 29px;height: 51px;top: -19px;left: -10px;}
+  .main .infrastructure .objects .item.item-4::before {width: 27px;height: 58px;top: -22px;left: -10px;}
+}
+
+.main .construction-technology {position: relative;margin: 0 0 200px;}
+.main .construction-technology .background {background-color: #F0F2F7;position: absolute;width: 55%;height: 620px;top: 230px;}
+.main .construction-technology .title h2  {position: relative;margin: 0 0 140px;width: 60%;}
+.main .construction-technology .body .scheme {margin: -50px 0 0;position: relative;}
+.main .construction-technology .body .scheme .point {background-color: #FFFFFF;border: 2px solid #30A779;border-radius: 50%;cursor: pointer;position: absolute;width: 16px;height: 16px;}
+.main .construction-technology .body .scheme .point:hover {border: 4px solid #30A779;transition: 0.1s ease;}
+.main .construction-technology .body .scheme .popup {background-color: #3F5586;position: absolute;z-index: 2;}
+.main .construction-technology .body .scheme .popup p {font-family: 'Roboto', sans-serif;color: #FFFFFF;font-size: 12px;padding: 10px 15px;text-align: center;}
+.main .construction-technology .body .scheme .mark-window {position: absolute;top: 242px;left: 491px;height: 0;}
+.main .construction-technology .body .scheme .mark-window .popup {top: -80px;width: 170px;}
+.main .construction-technology .body .scheme .mark-radiators  {position: absolute;top: 311px;left: 465px;}
+.main .construction-technology .body .scheme .mark-radiators .popup  {top: 15px;left: -164px;}
+.main .construction-technology .body .scheme .mark-wall {position: absolute;top: 330px;left: 580px;}
+.main .construction-technology .body .scheme .mark-wall .popup {right: 29px;top: 5px;width: 260px;}
+.main .construction-technology .body .scheme .mark-floor {position: absolute;top: 440px;left: 426px;}
+.main .construction-technology .body .scheme .mark-floor .popup {top: -20px;left: -180px;width: 140px;}
+.main .construction-technology .body .text {margin-top: 40px;}
+.main .construction-technology .body .text p {font-family: 'IBM Plex Sans', sans-serif;font-size: 18px;font-weight: normal;line-height: 23px;color: #223258;padding: 0 0 30px 100px;top: 2742;}
+
+@media (max-width: 1299px) {
+  .main .construction-technology {margin: 0 0 150px;}
+  .main .construction-technology .title h2 {margin: 0 0 60px;}
+  .main .construction-technology .background {height: 480px;top: 150px;}
+  .main .construction-technology .body .scheme {margin: 0 0 0;}
+  .main .construction-technology .body .scheme svg {width: 140%;position: relative;left: -182px;}
+  .main .construction-technology .body .text p {padding: 20px 0 0 20px;}
+  .main .construction-technology .body .scheme .mark-window {top: 234px;left: 285px;}
+  .main .construction-technology .body .scheme .mark-radiators {top: 299px;left: 262px;}
+  .main .construction-technology .body .scheme .mark-wall {top: 309px;left: 372px;}
+  .main .construction-technology .body .scheme .mark-floor {top: 419px;left: 222px;}
+}
+
+@media (max-width: 899px) {
+  .main .construction-technology .title h2 {margin: 0 0 20px;}
+  .main .construction-technology .background {top: 520px;width: 100%;height: 400px;}
+  .main .construction-technology .body {} 
+  .main .construction-technology .body .scheme {order: 1;}
+  .main .construction-technology .body .scheme svg {left: -90px;top: 50px;width: 130%;}
+  .main .construction-technology .body .text {margin-top: 0px;}
+  .main .construction-technology .body .text p {padding: 0}
+  .main .construction-technology .body .scheme .point {width: 13px; height: 13px;}
+  .main .construction-technology .body .scheme .mark-window {top: 233px;left: 282px;}
+  .main .construction-technology .body .scheme .mark-radiators {top: 286px;left: 264px;}
+  .main .construction-technology .body .scheme .mark-wall {top: 299px;left: 350px;}
+  .main .construction-technology .body .scheme .mark-floor {top: 379px;left: 232px;}
+
+}
+
+@media (max-width: 449px) {
+  .main .construction-technology {margin: 0 0 60px;}
+  .main .construction-technology .body .text p {font-size: 14px;}
+  .main .construction-technology .background {top: 510px;width: 100%;height: 280px;}
+  .main .construction-technology .body .scheme svg {left: -70px;top: 30px;width: 130%;}
+  .main .construction-technology .body .scheme .mark-window {top: 155px;left: 190px;}
+  .main .construction-technology .body .scheme .mark-radiators {top: 193px;left: 177px;}
+  .main .construction-technology .body .scheme .mark-wall {top: 200px;left: 237px;}
+  .main .construction-technology .body .scheme .mark-floor {top: 254px;left: 159px;}
+  .main .construction-technology .body .scheme .popup p {font-size: 11px;padding: 6px 10px;}
+  .main .construction-technology .body .scheme .mark-window .popup {top: -70px;left: -60px;}
+  .main .construction-technology .body .scheme .mark-wall .popup {top: 20px;left: -180px;}
+
+}
+
